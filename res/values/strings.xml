@@ -2,4 +2,5 @@
 <resources>
     <string name="app_name">android-first-steps</string>
     <string name="test_label">My first Android app</string>
+    <string name="pict_text">Beautiful picture</string>
 </resources>
