@@ -45,6 +45,11 @@ public class HelloWorldActivity extends Activity
 
     private void TapImage() {
         counter++;
+        String temp = getStringForDisplay(counter);
+        message.setText(String.format("You tapped %s", temp));
+    }
+
+    public String getStringForDisplay(int counter) {
         String temp;
         switch (counter) {
             case 1:
@@ -56,7 +61,7 @@ public class HelloWorldActivity extends Activity
             default:
                 temp = String.format("%d times", counter);
         }
-        message.setText(String.format("You tapped %s", temp));
+        return temp;
     }
 
 }
